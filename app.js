@@ -35,9 +35,9 @@ function sortearAmigo() {
     if(items.length < 2) {
         alert('¡Debes ingresar al menos dos amigos!');
         return;
+    } else {
+        let amigoSorteado = amigo[Math.floor(Math.random() * amigo.length)];
+        let resultado = document.getElementById('resultado');
+        resultado.innerHTML = `El amigo sorteado es: ${amigoSorteado}`;
     }
-
-    let amigoSorteado = amigo[Math.floor(Math.random() * amigo.length)];
-
-    alert('El amigo sorteado es: ' + amigoSorteado);
 }
