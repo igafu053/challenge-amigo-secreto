@@ -11,7 +11,16 @@
 
 <h2>Funcionalidades:</h2>
 
- <p>* Agregar nombres: Los usuarios escribirán el nombre de un amigo en un
- campo de texto y lo agregarán a una lista variable al hacer clic en el boton "Añadir".</p> 
+ <p>- Agregar nombres: Los usuarios escribirán el nombre de un amigo en un
+ campo de texto y lo agregarán a una lista variable al hacer clic en el boton "Añadir".</p>
+
+ <p>- Validar entrada: Si el campo de texto está vacio, el programa mostrará una
+ alerta pidiendo un nombre válido.</p>
+
+ <p>- Visualizar la lista: Los nombres ingresados aparecerán en una lista debajo del 
+ campo de entrada.</p>
+
+ <p>- Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará
+ aleatoriamente un nombre de la lista y se mostrará en la página.</p> 
 
  
