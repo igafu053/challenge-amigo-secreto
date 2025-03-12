@@ -20,7 +20,7 @@
  <p><strong>- Visualizar la lista:</strong> Los nombres ingresados aparecerán en una lista debajo del 
  campo de entrada.</p>
 
- <p><strong>- Sorteo aleatorio:</stronge> Al hacer clic en el botón <strong>"Sortear Amigo"</strong>, se seleccionará
+ <p><strong>- Sorteo aleatorio:</strong> Al hacer clic en el botón <strong>"Sortear Amigo"</strong>, se seleccionará
  aleatoriamente un nombre de la lista y se mostrará en la página.</p> 
 
  
