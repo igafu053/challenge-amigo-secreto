@@ -4,10 +4,22 @@ let amigo = [];
 
 function agregarAmigo() {
     let imputAmigo = document.getElementById('amigo');
-    let nombreAmigo = imputAmigo.value;
+    let nombreAmigo = imputAmigo.value.trim();
 
+    // Validar que el nombre solo contenga letras y espcios
+    let regex = /^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/;	
     if(!nombreAmigo) {
         alert('¡Debes ingresar un nombre!');
+        return;
+    } else if(!regex.test(nombreAmigo)) {
+        alert('¡Sólo se permiten letras y espacios en los nombres!');
+        imputAmigo.value = "";
+        imputAmigo.focus();
+        return;
+    } else if (amigo.length >= 5) {
+        alert('¡Sólo puedes agregar un máximo de 5 amigos!');
+        imputAmigo.value = "";
+        imputAmigo.focus();
         return;
     } else {
     amigo.push(nombreAmigo);
@@ -42,4 +54,11 @@ function sortearAmigo() {
         let limpiarLista = document.getElementById('listaAmigos');
         limpiarLista.innerHTML = "";
     }
+}
+
+function resetearSorteo() {
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = "";
+    amigo = [];
+    renderizarAmigos();
 }

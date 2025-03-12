@@ -1,0 +1,183 @@
+:root {
+    --color-primary: #A9B5DF;
+    --color-secondary: #FFF2F2;
+    --color-tertiary: #91ADED;
+    --color-button: #7886C7;
+    --color-button-hover: #A9B5DF;
+    --color-text: #2B2A5C;
+    --color-navy: #2D336B;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #2D336B;
+    border-radius: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 400px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 50px;
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: bold;
+    color: var(--color-navy);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+.section-title {
+    font-family: "Kumbh Sans", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #2D336B;
+    border-radius: 25px 0 0 25px;
+    font-size: 18px;
+}
+
+.button-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: sticky;
+    bottom: 0;
+    background-color: var(--color-secondary);
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #2D336B;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Imprima", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Imprima", sans-serif;
+    font-size: 18px;
+    border: 2px solid #2D336B;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #6968AB;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Imprima", sans-serif;
+    font-size: 19px;
+    margin: 20px auto;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    max-height: 300px;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #493D9E;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-navy);
+    background-color: var(--color-button);
+    font-size: 18px;
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
