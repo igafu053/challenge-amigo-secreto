@@ -6,6 +6,10 @@
     --color-button-hover: #A9B5DF;
     --color-text: #2B2A5C;
     --color-navy: #2D336B;
+
+    --fuente-lemon: "Lemon", sans-serif;
+    --fuente-kumbh: "Kumbh Sans", sans-serif;
+    --fuente-imprima: "Imprima", sans-serif;
 }
 
 /* Estilos generales */
@@ -62,7 +66,7 @@ body {
 /* Títulos */
 .main-title {
     font-size: 50px;
-    font-family: "Lemon", serif;
+    font-family: var(--fuente-lemon);
     font-weight: 400;
     font-style: bold;
     color: var(--color-navy);
@@ -71,7 +75,7 @@ body {
 }
 
 .section-title {
-    font-family: "Kumbh Sans", serif;
+    font-family: var(--fuente-kumbh);
     font-size: 36px;
     font-weight: 700;
     color: var(--color-primary);
@@ -117,14 +121,15 @@ body {
     border: 2px solid #2D336B;
     border-right: none;
     border-radius: 25px 0 0 25px;
-    font-family: "Imprima", serif;
+    font-family: var(--fuente-imprima);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos de botón */
 button {
     padding: 15px 30px;
-    font-family: "Imprima", sans-serif;
+    font-family: var(--fuente-imprima);
+    font-weight: bold;
     font-size: 18px;
     border: 2px solid #2D336B;
     border-radius: 25px;
@@ -146,7 +151,7 @@ button {
 ul {
     list-style-type: none;
     color: var(--color-text);
-    font-family: "Imprima", sans-serif;
+    font-family: var(--fuente-imprima);
     font-size: 19px;
     margin: 20px auto;
     padding: 0;
